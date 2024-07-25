@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    background-color: black;
+    list-style: none;
+    text-decoration: none;
+}
+
+header{
+    height: 90px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav{
+    width: 60%;
+}
+
+ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+#logo {
+    width: 150px;
+    height: auto;
+    
+}
+
+li{
+    color: aliceblue;
+    list-style: none;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    transition: 0.5s;
+    cursor: pointer;
+    font-size: 19px;
+}
+
+li:hover {
+    color: red;
+}
+
+.photocontainer {
+    margin-top: 50px;
+    height: 800px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 3fr);
+    color: white;
+}
+
+.photo {
+    margin: 5px;
+    background-color: aliceblue;
+    background-position: center;
+    background-size: cover;
+    cursor: pointer;
+    transition: 0.5s;
+    border-radius: 3%;
+
+}
+
+.photo:hover {
+    scale: 1.02;
+}
+
+.f1{
+    background-image: url('https://metro.co.uk/wp-content/uploads/2021/09/PRI_199372990.jpg?quality=90&strip=all');
+}
+
+.f2{
+    background-image: url('https://i.redd.it/ex0t76i89s821.jpg');
+}
+
+.f3{
+    background-image: url('https://pbs.twimg.com/media/FdzQd1gUAAEWlo0.jpg');
+}
+
+.f4{
+    background-image: url('https://cdn-6.motorsport.com/images/amp/6l9JzEx0/s6/alain-prost-mclaren-ayrton-sen.jpg');
+}
+
+.f5{
+    background-image: url('https://cdn.images.express.co.uk/img/dynamic/73/750x445/1130568.jpg');
+}
+
+.f6{
+    background-image: url('https://motorsporttickets.com/blog/wp-content/uploads/2021/08/1016916442-SCH-19850519-85MC-852-1-A2-1.jpg');
+}
+
+.f7{
+    background-image: url('https://i.guim.co.uk/img/media/736a602badca3d1be0db7574ced8b5a780299afd/174_416_3035_1821/master/3035.jpg?width=1200&quality=85&auto=format&fit=max&s=29b075bfd9ee5582dd606ac785122165');
+}
+
+.f8{
+    background-image: url('https://p2.trrsf.com/image/fget/cf/940/0/images.terra.com/2022/05/25/1991-twitter-mclaren-1hrmjox2gxf05.jpg');
+}
+
+.f9{
+    background-image: url('https://frontofficesports.com/wp-content/uploads/2023/11/red-bull-abu-dhabi-scaled.jpeg?quality=100');
+}
+
+.container {
+    width: 100%;
+    height: 900px;
+    background-image: url('https://www.esquireme.com/cloud/2023/03/02/what-is-the-car-at-the-back-of-f1-grid.jpg');
+    background-size: cover;
+    background-position: center;
+    margin-top: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.comentcontainer{
+    height: 500px;
+    width: 350px;
+    opacity: 0.9;
+    background-color: black;
+    border-radius: 10%;
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: "Oswald", sans-serif;
+
+}
+
+#email {
+    width: 95%;
+    height: 30px;
+    color: aliceblue;
+}
+
+#caixadetexto {
+    width: 95%;
+    height: 250px;
+    color: aliceblue;
+
+}
+
+h2 {
+    width: 50%;
+    font-size: 40px;
+    font-family: "Bebas Neue", sans-serif;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.button {
+    height: 50px;
+    width: 62%;
+    background-color: red;
+    margin-top: 05px;
+    color: aliceblue;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+footer{
+    height: 300px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+span{
+    color: aliceblue;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    transition: 0.8s;
+}
+
+span:hover{
+    color: red;
+}
+
+.footer-navigation{
+    display: none;
+}
+
+.footer-list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media(max-width: 768px) {
+    .footer-navigation{
+        display: block;
+    }
+
+    nav{
+        display: none;
+    }
+
+    .photocontainer{
+        width: 100%;
+        height: 2400px;
+        grid-template-columns: 1fr;
+    }
+
+    .container {
+        background-image: url('https://preview.redd.it/tbsx56dtl0o41.jpg?width=640&crop=smart&auto=webp&s=98367d07b7ec45bbe72514cef82a15d5cb27e704');
+    }
+
+}

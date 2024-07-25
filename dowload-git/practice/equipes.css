@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+
+* {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: black;
+    text-decoration: none;
+}
+
+header {
+    height: 90px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav{
+    width: 60%;
+}
+
+ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+li{
+    list-style: none;
+    color: aliceblue;
+    transition: .5s;
+    cursor: pointer;
+    font-family: 'Kdam Thmor Pro', sans-serif;    
+    font-size: 19px;
+}
+
+li:hover {
+    color: red;
+}
+
+#logo {
+    width: 150px;
+    height: auto;
+}
+
+.teams-cards-content {
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.cards-content {
+    width: 95%;
+    display: grid;
+    grid-template-columns: repeat(5,2fr);
+}
+
+.card{
+    width: 100%;
+    height: 190px;
+    background-color: green; 
+    display: flex;
+    align-items: flex-end;
+    background-size: cover;
+    background-position: center;
+    color: aliceblue;
+    cursor: pointer;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+.card:hover{
+    transition: 1.5s;
+    transform: scale(1.15);
+}
+
+.alpine{
+    transition: 0.5s;
+    background-image: url('https://i.pinimg.com/564x/c8/1c/8d/c81c8d72b5c8f32d4cc1526a23b59ccd.jpg');
+}
+
+.aston{
+    transition: 0.5s;
+    background-image: url('https://i.pinimg.com/564x/16/03/b3/1603b33c0adfc54a669a318cd05826bd.jpg');
+}
+
+.ferrari{
+    transition: 0.5s;
+    background-image: url('https://i.pinimg.com/736x/f5/7a/cd/f57acd525c15fa16d7b23d29637847f6.jpg');
+}
+
+.haas{
+    color: black;
+    transition: 0.5s;
+    background-image: url('https://i.pinimg.com/564x/3f/81/24/3f8124f6c6e1be5122ec45155bb413df.jpg');
+}
+
+.mclaren{
+    transition: 0.5s;
+    background-image: url('https://i.pinimg.com/564x/1b/5d/14/1b5d145a2279719a9e8239530c194406.jpg');
+}
+
+.mercedes{
+    color: white;
+    transition: 0.5s;
+    background-image: url('https://i.pinimg.com/474x/09/5e/4c/095e4c19d7f609e23bbe73b28372b579.jpg');
+}
+
+.racingbulls{
+    transition: 0.5s;
+    background-image: url('https://i.pinimg.com/736x/2f/a6/16/2fa616e29789b79cadb8599d144a682a.jpg');
+}
+
+.sauber{
+    transition: 0.5s;
+    background-image: url('https://i.pinimg.com/736x/0e/33/06/0e3306b5b1b199913a44c85d310d8af6.jpg');
+}
+
+.redbull{
+    transition: 0.5s;
+    background-image: url('https://i.pinimg.com/564x/63/a3/fc/63a3fc831b09eb81fea0a480f6043194.jpg');
+}
+
+.williams{
+    transition: 0.5s;
+    background-image: url('https://i.pinimg.com/564x/63/aa/a2/63aaa25489f5df04a220ea1694b58603.jpg');
+}
+
+.alpine:hover{
+    color: blueviolet;
+    transition: 0.5s;
+    background-image: url('https://formularapida.net/wp-content/uploads/2024/04/BWT-Alpine-F1-Team-2024-Formula-1-Japanese-Grand-Prix-Friday.jpg');
+}
+
+.aston:hover{
+    color: yellow;
+    transition: 0.5s;
+    background-image: url('https://images.ps-aws.com/c?url=https%3A%2F%2Fd3cm515ijfiu6w.cloudfront.net%2Fwp-content%2Fuploads%2F2023%2F10%2F12113724%2Faston-martin-fernando-alonso-qatar-grand-prix1.jpg');
+}
+
+.ferrari:hover{
+    color: red;
+    transition: 0.5s;
+    background-image: url('https://media.formula1.com/image/upload/v1700218971/trackside-images/2023/F1_Grand_Prix_of_Las_Vegas___Practice/1798369587.jpg.transform/9col/image.jpg');
+}
+
+.haas:hover{
+    color: red;
+    transition: 0.5s;
+    background-image: url('https://f1grandprix.motorionline.com/wp-content/uploads/2024/02/hulkenberg-haas-silverstone-shakedown-f1-2024-1024x682.jpg');
+}
+
+.mclaren:hover{
+    color: orange;
+    transition: 0.5s;
+    background-image: url('https://cdn-9.motorsport.com/images/amp/6D1XOPK0/s1000/lando-norris-mclaren-mcl38.jpg');
+}
+
+.mercedes:hover{
+    color: aqua;
+    transition: 0.5s;
+    background-image: url('https://f1grandprix.motorionline.com/wp-content/uploads/2024/03/russell-mercedes-melbourne-f1-2024-1024x682.jpg');
+}
+
+.racingbulls:hover{
+    color: blue;
+    transition: 0.5s;
+    background-image: url('https://cdn.racingnews365.com/2024/Ricciardo/_1092x683_crop_center-center_85_none/XPB_1260517_HiRes.jpg?v=1709140120');
+}
+
+.sauber:hover{
+    color: rgb(2, 249, 2);
+    transition: 0.5s;
+    background-image: url('https://i.pinimg.com/736x/b9/a6/5d/b9a65df177b6cf8f8b54349f296670cd.jpg');
+}
+
+.redbull:hover{
+    color: rgb(5, 5, 121);
+    transition: 0.5s;
+    background-image: url('https://www.the-race.com/content/images/2024/02/XPB_1259613_HiRes-2.jpg');
+}
+
+.williams:hover{
+    color: rgb(38, 38, 195);
+    transition: 0.5s;
+    background-image: url('https://cdn-3.motorsport.com/images/amp/6n9OanAY/s1000/alex-albon-williams-fw46.jpg');
+}
+
+footer{
+    height: 300px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+span{
+    color: aliceblue;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    transition: 0.8s;
+}
+
+span:hover{
+    color: red;
+}
+
+.footer-navigation {
+    display: none;
+}
+
+.footer-list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media(max-width: 768px){
+    .footer-navigation{
+        display: block;
+    }
+
+    nav{
+        display: none;
+    }
+
+    .card{
+        height: 170px;
+    }
+
+    .cards-content{
+        grid-template-columns: repeat(2, 10fr);
+        margin-top: 50px;
+    }
+
+    .card:hover{
+        transition: 1.5s;
+        transform: scale(1.08);
+    }
+}
+

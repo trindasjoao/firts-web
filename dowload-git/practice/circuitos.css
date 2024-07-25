@@ -1,0 +1,1551 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    background-color: black;
+    list-style: none;
+    text-decoration: none;
+}
+
+header{
+    height: 90px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav{
+    width: 60%;
+}
+
+ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+#logo {
+    width: 150px;
+    height: auto;
+    
+}
+
+li{
+    color: aliceblue;
+    list-style: none;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    transition: 0.5s;
+    cursor: pointer;
+    font-size: 19px;
+}
+
+li:hover {
+    color: red;
+}
+
+
+.world {
+    background-image: url('https://i.pinimg.com/originals/89/da/3a/89da3aaf9f14e2b29e25367837b3fa2c.jpg');
+    background-position: 50% 50%;
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    height: 500px;
+}
+
+.south-america{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    color: aliceblue;
+    background-color: transparent;
+    width: 180px;
+    height: 270px;
+    position: absolute;
+    top: 200px;
+    left: 280px;
+}
+.north-america{
+    width: 280px;
+    height: 180px;
+    position: absolute;
+    left: 100px;
+    background-color: transparent;
+}
+
+.asia{
+    z-index: 1;
+    width: 500px;
+    height: 150px;
+    background-color: transparent;
+    position: absolute;
+    left: 58%;
+    top: 20.05%;
+}
+
+.europe{
+    width: 400px;
+    height: 100px;
+    background-color: transparent;
+    position: absolute;
+    left: 43%;
+    top: 0%;
+}
+
+
+.australia{
+    width: 150px;
+    height: 200px;
+    position: absolute;
+    right: 50px;
+    bottom: 10%;
+    background-color: transparent;
+}
+
+.block {
+    display: flex;
+    background-size: cover;
+    background-position: center;
+    width: 30px;
+    height: 30px;
+}
+
+.interlagos{
+    background-image: url('https://i.pinimg.com/736x/93/0b/e8/930be844f025a7ae1b6196a5d9d2824b.jpg');
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    background-color: yellow;
+    border-radius: 50%;
+    transition: .5s;
+}
+
+.interlagos:hover {
+    z-index: 1;
+    height: 30px;
+    width: 30px;
+    scale: 5.0;
+    border-radius: 20%;
+    animation: changeImage1 3s forwards;
+    animation-timing-function: ease-in;
+}
+
+@keyframes changeImage1 {
+    0%{
+        width: 30px;
+        background-image: url('https://i.pinimg.com/736x/55/c9/1a/55c91a5c45a056c0a13acb6b3ed7c0f6.jpg');
+    }
+    75% {
+        width: 30px;
+        background-image: url('https://i.pinimg.com/736x/55/c9/1a/55c91a5c45a056c0a13acb6b3ed7c0f6.jpg');
+    }
+    100% {
+        border-radius: 0;
+        width: 40px;
+        background-image: url('https://cdn-7.motorsport.com/images/amp/YEQaglGY/s1000/max-verstappen-red-bull-racing.jpg');
+    }
+}
+
+
+.mexico{
+    position: absolute;
+    left: 88px;
+    bottom: 2px;
+    background-image: url('https://s4.static.brasilescola.uol.com.br/be/2022/10/bandeira-do-mexico.jpg');
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    background-color: yellow;
+    border-radius: 50%;
+    transition: .5s;
+    background-size: cover;
+    background-position: center;
+}
+
+.mexico:hover {
+    border-radius: 0;
+    scale: 5.0;
+    background-size: cover;
+    background-position: center;
+    border-radius: 20%;
+    animation: changeImage2 3s forwards;
+    animation-timing-function: ease-in;
+}
+
+@keyframes changeImage2 {
+    0%{
+        width: 30px;
+        background-image: url('https://i.pinimg.com/736x/a9/36/c8/a936c8c67644879f73611164e4560c75.jpg');
+    }
+    75% {
+        width: 30px;
+        background-image: url('https://i.pinimg.com/736x/a9/36/c8/a936c8c67644879f73611164e4560c75.jpg');
+    }
+    100% {
+        border-radius: 0;
+        width: 50px;
+        background-image: url('https://img.band.uol.com.br/image/2023/10/24/max-verstappen-red-bull-no-gp-do-mexico-2022-12228.webp');
+    }
+}
+
+.miami{
+    position: absolute;
+    left: 170px;
+    bottom: 15px;
+    background-image: url('https://static.vecteezy.com/system/resources/previews/000/532/212/original/vector-united-states-of-america-flag-usa-flag-america-flag-background.jpg');
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    transition: .5s;
+    background-position: center;
+    background-size: cover;
+}
+
+.miami:hover {
+    z-index: 1;
+    border-radius: 0;
+    scale: 5.0;
+    border-radius: 20%;
+    animation: changeImage3 3s forwards;
+    animation-timing-function: ease-in;
+}
+
+@keyframes changeImage3 {
+    0%{
+        width: 30px;
+        background-image: url('https://i.pinimg.com/564x/2e/00/62/2e00625fcb7bc50fff2d99efd28fdbe4.jpg');
+    }
+    75% {
+        width: 30px;
+        background-image: url('https://i.pinimg.com/564x/2e/00/62/2e00625fcb7bc50fff2d99efd28fdbe4.jpg');
+    }
+    100% {
+        border-radius: 0;
+        width: 50px;
+        background-image: url('https://variety.com/wp-content/uploads/2024/04/GettyImages-1488324030.jpg?w=1000&h=667&crop=1');
+    }
+}
+
+.texas{
+    position: absolute;
+    left: 100px;
+    bottom: 30px;
+    background-image: url('https://static.vecteezy.com/system/resources/previews/000/532/212/original/vector-united-states-of-america-flag-usa-flag-america-flag-background.jpg');
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    transition: .5s;
+    background-position: center;
+    background-size: cover;
+}
+
+.texas:hover {
+    z-index: 1;
+    border-radius: 0;
+    scale: 5.0;
+    border-radius: 20%;
+    animation: changeImage4 3s forwards;
+    animation-timing-function: ease-in;
+}
+
+@keyframes changeImage4 {
+    0%{
+        width: 30px;
+        background-image: url('https://i.pinimg.com/736x/ce/4a/7b/ce4a7b924a67e58a064ae459c44c9716.jpg');
+    }
+    75% {
+        width: 30px;
+        background-image: url('https://i.pinimg.com/736x/ce/4a/7b/ce4a7b924a67e58a064ae459c44c9716.jpg');
+    }
+    100% {
+        border-radius: 0;
+        width: 45px;
+        background-image: url('https://s2-ge.glbimg.com/-ngVRQsjcvQGrCcIXt1PwHTy4tw=/0x0:1024x683/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_bc8228b6673f488aa253bbcb03c80ec5/internal_photos/bs/2023/9/G/nl5rJxTfAHrEez95vkNQ/gettyimages-1750755382.jpg');
+    }
+}
+
+.vegas{
+    position: absolute;
+    left: 40px;
+    bottom: 50px;
+    background-image: url('https://static.vecteezy.com/system/resources/previews/000/532/212/original/vector-united-states-of-america-flag-usa-flag-america-flag-background.jpg');
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    transition: .5s;
+    background-position: center;
+    background-size: cover;
+}
+
+.vegas:hover {
+    z-index: 1;
+    border-radius: 0;
+    scale: 5.0;
+    border-radius: 20%;
+    animation: changeImage5 3s forwards;
+    animation-timing-function: ease-in;
+}
+
+@keyframes changeImage5 {
+    0%{
+        width: 30px;
+        background-image: url('https://i.pinimg.com/736x/2e/7a/d1/2e7ad1c9820c3ef4f993c99c843324c5.jpg');
+    }
+    75% {
+        width: 30px;
+        background-image: url('https://i.pinimg.com/736x/2e/7a/d1/2e7ad1c9820c3ef4f993c99c843324c5.jpg');
+    }
+    100% {
+        border-radius: 0;
+        width: 45px;
+        background-image: url('https://assets.rebelmouse.io/media-library/formula-1-cars-hit-the-las-vegas-circuit-for-grand-prix-practice-but-the-famous-strip-bites-back.webp?id=50505452&width=1200&height=800&quality=90&coordinates=0%2C0%2C0%2C0');
+    }
+}
+
+.canada{
+    position: absolute;
+    right: 60px;
+    top: 65px;
+    background-image: url('https://t3.ftcdn.net/jpg/00/51/72/40/360_F_51724014_7EJcayh8AzQPFI59uh6m4yZpOAnGYJ2V.jpg');
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    transition: .5s;
+    background-position: center;
+    background-size: cover;
+}
+
+.canada:hover {
+    z-index: 1;
+    border-radius: 0;
+    scale: 5.0;
+    border-radius: 20%;
+    animation: changeImage6 3s forwards;
+    animation-timing-function: ease-in;
+}
+
+@keyframes changeImage6 {
+    0%{
+        width: 30px;
+        background-image: url('https://i.pinimg.com/736x/ed/05/37/ed053731e662d4cb13bc6daa0853575a.jpg');
+    }
+    75% {
+        width: 30px;
+        background-image: url('https://i.pinimg.com/736x/ed/05/37/ed053731e662d4cb13bc6daa0853575a.jpg');
+    }
+    100% {
+        border-radius: 0;
+        width: 40px;
+        background-image: url('https://ichef.bbci.co.uk/live-experience/cps/1024/cpsprodpb/169EB/production/_130115629_gettyimages-1403872488.jpg');
+    }
+}
+
+
+.emilia{
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    left: 100px;
+    top:70px;
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Flag_of_Italy.svg/1024px-Flag_of_Italy.svg.png');
+    cursor: pointer;
+    border-radius: 50%;
+    transition: .5s;
+    background-position: center;
+    background-size: cover;
+}
+
+.emilia:hover {
+    z-index: 1;
+    height: 30px;
+    width: 30px;
+    border-radius: 0;
+    scale: 5.0;
+    border-radius: 20%;
+    animation: changeImage7 3s forwards;
+    animation-timing-function: ease-in;
+}
+
+@keyframes changeImage7 {
+    0%{
+        width: 30px;
+        background-image: url('https://i.pinimg.com/736x/68/08/19/68081904eb821ccf74aa25b6abc4dd13.jpg');
+    }
+    75% {
+        width: 30px;
+        background-image: url('https://i.pinimg.com/736x/68/08/19/68081904eb821ccf74aa25b6abc4dd13.jpg');
+    }
+    100% {
+        border-radius: 0;
+        width: 40px;
+        background-image: url('https://cdn-1.motorsport.com/images/amp/0JBNbVo0/s6/max-verstappen-red-bull-racing.jpg');
+    }
+}
+
+.monza{
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    left: 85px;
+    top:60px;
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Flag_of_Italy.svg/1024px-Flag_of_Italy.svg.png');
+    cursor: pointer;
+    border-radius: 50%;
+    transition: .5s;
+    background-position: center;
+    background-size: cover;
+}
+
+.monza:hover {
+    z-index: 1;
+    height: 30px;
+    width: 30px;
+    border-radius: 0;
+    scale: 5.0;
+    border-radius: 20%;
+    animation: changeImage8 3s forwards;
+    animation-timing-function: ease-in;
+}
+
+@keyframes changeImage8 {
+    0%{
+        width: 30px;
+        background-image: url('https://i.pinimg.com/736x/c5/ea/d8/c5ead802855ed6a7f7bc68d6c4d439d9.jpg');
+    }
+    75% {
+        width: 30px;
+        background-image: url('https://i.pinimg.com/736x/c5/ea/d8/c5ead802855ed6a7f7bc68d6c4d439d9.jpg');
+    }
+    100% {
+        border-radius: 0;
+        width: 40px;
+        background-image: url('https://www.insidehook.com/wp-content/uploads/2023/09/f1-monza-italian-grand-prix-2023.jpg?fit=1200%2C800');
+    }
+}
+
+.austria{
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    left: 93px;
+    top:48px;
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAARMAAAC3CAMAAAAGjUrGAAAACVBMVEXIEC7////HACA8bvHGAAAAs0lEQVR4nO3csQ3AMAzAMLf/H93dmjoFAcgTdIBmAAAAAAAAAAAAAAAAAAAAAH562eZh06Q0KU1Kk9KkNClNSpPSpDQpTUqT0qQ0KU1Kk9KkNClNSpPSpDQpTUqT0qQ0KU1Kk9KkNClNSpPSpDQpTUqT0qQ0KU1Kk9KkNClNSpPSpDQpTUqT0qQ0KU1Kk9KkNClNSpPSpDQpTUqT8rWo06sRAAAAAAAAAAAAAAAAAAAA4D4fZdRF1FegWJQAAAAASUVORK5CYII=');
+    cursor: pointer;
+    border-radius: 50%;
+    transition: .5s;
+    background-position: center;
+    background-size: cover;
+}
+
+.austria:hover {
+    z-index: 1;
+    height: 30px;
+    width: 30px;
+    border-radius: 0;
+    scale: 5.0;
+    border-radius: 20%;
+    animation: changeImage9 3s forwards;
+    animation-timing-function: ease-in;
+}
+
+@keyframes changeImage9 {
+    0%{
+        width: 30px;     
+        background-image: url('https://i.pinimg.com/736x/0f/8e/47/0f8e4717c8be8b1c8e1f148698cb6166.jpg');
+    }
+    75% {
+        width: 30px;
+        background-image: url('https://i.pinimg.com/736x/0f/8e/47/0f8e4717c8be8b1c8e1f148698cb6166.jpg');
+    }
+    100% {
+        border-radius: 0;
+        width: 50px;
+        background-image: url('https://cdn.24.co.za/files/Cms/General/d/3409/eea48ff2b5bf42d394dab18fb4e8c266.jpg');
+    }
+}
+
+.monaco{
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    left: 75px;
+    top:70px;
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPsAAADJCAMAAADSHrQyAAAADFBMVEX////OESbMABDnp6rZLsgpAAAApUlEQVR4nO3PAQ0AIAzAsAP+PSODkLUKtlld8zrgIe9N3pu8N3lv8t7kvcl7k/cm703em7w3eW/y3uS9yXuT9ybvTd6bvDd5b/Le5L3Je5P3Ju9N3pu8N3lv8t7kvcl7k/cm703em7w3eW/y3uS9yXuT9ybvTd6bvDd5b/Le5L3Je5P3pvT77prTNQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHzlAubyZflpPDkxAAAAAElFTkSuQmCC');
+    cursor: pointer;
+    border-radius: 50%;
+    transition: .5s;
+    background-position: center;
+    background-size: cover;
+}
+
+.monaco:hover {
+    background-size: cover;
+    z-index: 1;
+    height: 30px;
+    width: 30px;
+    border-radius: 0;
+    scale: 5;
+    border-radius: 20%;
+    animation: changeImage10 3s forwards;
+    animation-timing-function: ease-in;
+}
+
+@keyframes changeImage10 {
+    0%{
+        height: 30px;
+        width: 40px;
+        background-image: url('https://i.pinimg.com/736x/8b/a1/94/8ba194527291e87a9c552422141ed413.jpg');
+    }
+    75% {
+        height: 30px;
+        width: 40px;
+        background-image: url('https://i.pinimg.com/736x/8b/a1/94/8ba194527291e87a9c552422141ed413.jpg');
+    }
+    100% {
+        background-size: cover;
+        height: 30px;
+        width: 50px;
+        border-radius: 0;
+        background-image: url('https://cdn-imgix.headout.com/media/images/7d0797d8d3e5a6961697266f94016da9-Monaco%201.jpg');
+    }
+}
+.hungria{
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    left: 110px;
+    top:48px;
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAT4AAACfCAMAAABX0UX9AAAAElBMVEXOKTn///9HcFDOIjT//f5DbkzABX1mAAAA9UlEQVR4nO3QQQGAQAAEodXT/pUNMT4hAhsAAAAAAAAAAAAAAAAAAADAjw7BHoJdBPoSfYm+RF+iL9GX6Ev0JfoSfYm+RF+iL9GX6Ev0JfoSfYm+RF+iL9GX6Ev0JfoSfYm+RF+iL9GX6Ev0JfoSfYm+RF+iL9GX6Ev0JfoSfYm+RF+iL9GX6Ev0JfoSfYm+ZC/BbgJ9ib5EX6Iv0ZfoS/Ql+hJ9ib5EX6Iv0ZfoS/Ql+hJ9ib5EX6Iv0ZfoS/Ql+hJ9ib5EX6Iv0ZfoS/Ql+hJ9ib5EX6Iv0ZfoS/Ql+hJ9ib5EX6Iv0ZfoS/Ql+hJ9ib5EX/IByjzQsdxAH+0AAAAASUVORK5CYII=');
+    cursor: pointer;
+    border-radius: 50%;
+    transition: .5s;
+    background-position: center;
+    background-size: cover;
+}
+
+.hungria:hover {
+    z-index: 1;
+    height: 30px;
+    width: 30px;
+    border-radius: 0;
+    scale: 5.0;
+    border-radius: 20%;
+    animation: changeImage11 3s forwards;
+    animation-timing-function: ease-in;
+}
+
+@keyframes changeImage11 {
+    0%{
+        width: 30px;
+        background-image: url('https://i.pinimg.com/736x/d7/90/21/d790218e6164a38eae73fec4b066b1d5.jpg');
+    }
+    75% {
+        width: 30px;
+        background-image: url('https://i.pinimg.com/736x/d7/90/21/d790218e6164a38eae73fec4b066b1d5.jpg');
+    }
+    100% {
+        border-radius: 0;
+        width: 40px;
+        background-image: url('https://d2xpg1khvwxlf1.cloudfront.net/production/images/original/31335-hungarian_grand_prix_gold_4_grandstand-fc99b94523c5c25e0ef92b1694738a21.jpg');
+    }
+}
+
+.holanda{
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    left: 65px;
+    top:40px;
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAARIAAAC4CAMAAAAYGZMtAAAALVBMVEX///8uMZLtGyTsAAD9+fgeIo6gocXS0uEVGoz50dH5zc3l5e2bnMKgosUAAIeG8umSAAABB0lEQVR4nO3QywEBURRAsctg/Psv19ZzSpCUkLltRxaj5JeSUBJKQkkoCSWhJJSEklASSkJJKAkloSSUhJJQEkpCSSgJJaEklISSUBJKQkkoCSWhJJSEklASSkJJKAkloSSUhJJQEkpCSSgJJaEklISSUBJKQkkoCSWhJJSEklASc99YzZxYDQAAAAAAAAAAAAAAAAAAAPCfHs/L68KX2d9nFrNfDyyUhJJQEkpCSSgJJaEklISSUBJKQkkoCSWhJJSEklASSkJJKAkloSSUhJJQEkpCSSgJJaEklISSUBJKQkkoCSWhJJSEklASSkJJKAkloSSUhJJQEkpCSSgJJaEklISSUBIfA8LY+cQPZdQAAAAASUVORK5CYII=');
+    cursor: pointer;
+    border-radius: 50%;
+    transition: .5s;
+    background-position: center;
+    background-size: cover;
+}
+
+.holanda:hover {
+    z-index: 1;
+    height: 30px;
+    width: 30px;
+    border-radius: 0;
+    scale: 5.0;
+    border-radius: 20%;
+    animation: changeImage12 3s forwards;
+    animation-timing-function: ease-in;
+}
+
+@keyframes changeImage12 {
+    0%{
+        width: 30px;
+        background-image: url('https://i.pinimg.com/736x/80/1e/57/801e575bf4beed3fa6ce2a0d593c2d25.jpg');
+    }
+    75% {
+        width: 30px;
+        background-image: url('https://i.pinimg.com/736x/80/1e/57/801e575bf4beed3fa6ce2a0d593c2d25.jpg');
+    }
+    100% {
+        border-radius: 0;
+        width: 40px;
+        background-image: url('https://cdn-4.motorsport.com/images/amp/0mbEw8M2/s1000/sergio-perez-red-bull-racing-r.jpg');
+    }
+}
+
+.belgica{
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    left: 75px;
+    top: 47px;
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAARMAAAC3CAMAAAAGjUrGAAAAFVBMVEUAAADvM0D92iVvYBD/4SbzcjjvLEG9OJYlAAAA/klEQVR4nO3QQQEAIAgEMFCwf2RT3G+LsKqcOydl9nVMsMSJEydOnDhx4sSJEydOnDhx4sSJEydOnDhx4sSJEydOnDhx4sSJEydOnDhx4sSJEydOnDhx4sSJEydOnDhx4sSJEydOnDhx4sSJEydOnDhx4sSJEydOnDhx4sSJEydOnDhx4sSJEydOnDhx4sSJEydOnDhx4sSJEydOnDhx4sSJEydOnDhx4sSJEydOnDhx4sSJEydOnDhx4sSJEydOnDhx4sSJEydOnDhx4sSJEydOnDhx4sSJEydOnDhx4sSJEydOnDhx4sSJEydOnDhx4sSJEydOnDhx4sSJk5gPcJTPT2ufiCgAAAAASUVORK5CYII=');
+    cursor: pointer;
+    border-radius: 50%;
+    transition: .5s;
+    background-position: center;
+    background-size: cover;
+}
+
+.belgica:hover {
+    z-index: 1;
+    height: 30px;
+    width: 30px;
+    border-radius: 0;
+    scale: 5.0;
+    border-radius: 20%;
+    animation: changeImage13 3s forwards;
+    animation-timing-function: ease-in;
+}
+
+@keyframes changeImage13 {
+    0%{
+        width: 30px;
+        background-image: url('https://i.pinimg.com/736x/6f/12/b7/6f12b765ea18deb14b16fe2242f02047.jpg');
+    }
+    75% {
+        width: 30px;
+        background-image: url('https://i.pinimg.com/736x/6f/12/b7/6f12b765ea18deb14b16fe2242f02047.jpg');
+    }
+    100% {
+        border-radius: 0;
+        width: 40px;
+        background-image: url('https://media.formula1.com/image/upload/content/dam/fom-website/manual/Teams%20-%20Belgium%20-%20Sunday%20-%202022.jpg');
+    }
+}
+
+.inglaterra{
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    left: 50px;
+    top: 35px;
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/a/a5/Flag_of_the_United_Kingdom_%281-2%29.svg');
+    cursor: pointer;
+    border-radius: 50%;
+    transition: .5s;
+    background-position: center;
+    background-size: cover;
+}
+
+.inglaterra:hover {
+    z-index: 1;
+    height: 30px;
+    width: 30px;
+    border-radius: 0;
+    scale: 5.0;
+    border-radius: 20%;
+    animation: changeImage14 3s forwards;
+    animation-timing-function: ease-in;
+}
+
+@keyframes changeImage14 {
+    0%{
+        width: 30px;
+        background-image: url('https://i.pinimg.com/736x/10/7c/a8/107ca805832ec3be8d8e0e9e1e57e73b.jpg');
+    }
+    75% {
+        width: 30px;
+        background-image: url('https://i.pinimg.com/736x/10/7c/a8/107ca805832ec3be8d8e0e9e1e57e73b.jpg');
+    }
+    100% {
+        border-radius: 0;
+        width: 40px;
+        background-image: url('https://hips.hearstapps.com/hmg-prod/images/carlos-sainz-of-spain-driving-the-ferrari-f1-75-leads-max-news-photo-1694703716.jpg');
+    }
+}
+
+.espanha{
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    left: 52px;
+    top:82px;
+    background-image: url('data:image/png;base64,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');
+    cursor: pointer;
+    border-radius: 50%;
+    transition: .5s;
+    background-position: center;
+    background-size: cover;
+}
+
+.espanha:hover {
+    z-index: 1;
+    height: 30px;
+    width: 30px;
+    scale: 5.0;
+    border-radius: 20%;
+    animation: changeImage15 3s forwards;
+    animation-timing-function: ease-in;
+}
+
+@keyframes changeImage15 {
+    0%{
+        width: 30px;
+        background-image: url('https://i.pinimg.com/736x/19/07/a4/1907a43b707530f1fc8b25f46425acdb.jpg');
+    }
+    75% {
+        width: 30px;
+        background-image: url('https://i.pinimg.com/736x/19/07/a4/1907a43b707530f1fc8b25f46425acdb.jpg');
+    }
+    100% {
+        border-radius: 0;
+        width: 40px;
+        background-image: url('https://cdn-3.motorsport.com/images/amp/2eAB8rm2/s1000/formula-1-spanish-gp-2023-carl-3.jpg');
+    }
+}
+
+.qatar{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 65px;
+    top: 18px;
+    background-image: url('data:image/png;base64,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');
+    cursor: pointer;
+    border-radius: 50%;
+    transition: 0.5s;
+    background-position: center;
+    background-size: cover;
+}
+
+.qatar:hover {
+    z-index: 1;
+    height: 30px;
+    width: 30px;
+    scale: 5.0;
+    border-radius: 20%;
+    animation: changeImage16 3s forwards;
+    animation-timing-function: ease-in;
+}
+
+@keyframes changeImage16 {
+    0%{
+        width: 30px;
+        background-image: url('https://i.pinimg.com/736x/f6/02/3c/f6023c79775a59f3224067a5996ab44b.jpg');
+    }
+    75% {
+        width: 30px;
+        background-image: url('https://i.pinimg.com/736x/f6/02/3c/f6023c79775a59f3224067a5996ab44b.jpg');
+    }
+    100% {
+        border-radius: 0;
+        width: 40px;
+        background-image: url('https://cdn-7.motorsport.com/images/amp/2y3Xyxy6/s1000/oscar-piastri-mclaren-mcl60-ca.jpg');
+    }
+}
+
+.arabia-saudita{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 20px;
+    top: 30px;
+    background-image: url('https://th.bing.com/th/id/R.6647ed081c6fb4b76f48f4a7e0f8297d?rik=CW4sEiaZkCOflg&riu=http%3a%2f%2fgeo5.net%2fimagens%2fbandeira-da-arabia-saudita.png&ehk=Mh4SKP4l1znlUvArepqM9L9XgwtFWp%2fi9WrnNxhDW10%3d&risl=&pid=ImgRaw&r=0');
+    cursor: pointer;
+    border-radius: 50%;
+    transition: .5s;
+    background-position: center;
+    background-size: cover;
+}
+
+.arabia-saudita:hover {
+    z-index: 1;
+    height: 30px;
+    width: 30px;
+    scale: 5.0;
+    border-radius: 20%;
+    animation: changeImage17 3s forwards;
+    animation-timing-function: ease-in;
+}
+
+@keyframes changeImage17 {
+    0%{
+        width: 30px;
+        background-image: url('https://i.pinimg.com/736x/1e/74/b1/1e74b1bdcfe66fd503143b5cfe811bee.jpg');
+    }
+    75% {
+        width: 30px;
+        background-image: url('https://i.pinimg.com/736x/1e/74/b1/1e74b1bdcfe66fd503143b5cfe811bee.jpg');
+    }
+    100% {
+        border-radius: 0;
+        width: 40px;
+        background-image: url('https://cdn-7.motorsport.com/images/amp/Y99AEPqY/s1000/max-verstappen-red-bull-racing.jpg');
+    }
+}
+
+.azerbaijao{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    right: 140px;
+    bottom: 3px;
+    background-image: url('https://th.bing.com/th/id/OIP.0P8gBXDQpG1-Qv8dHjmwSAHaFN?rs=1&pid=ImgDetMain');
+    cursor: pointer;
+    border-radius: 50%;
+    transition: .5s;
+    background-position: center;
+    background-size: cover;
+}
+
+.azerbaijao:hover {
+    z-index: 1;
+    height: 30px;
+    width: 30px;
+    scale: 5.0;
+    border-radius: 20%;
+    animation: changeImage18 3s forwards;
+    animation-timing-function: ease-in;
+}
+
+@keyframes changeImage18 {
+    0%{
+        width: 30px;
+        background-image: url('https://i.pinimg.com/736x/9a/a4/67/9aa467f9a1eac82276d671289c97962c.jpg');
+    }
+    75% {
+        width: 30px;
+        background-image: url('https://i.pinimg.com/736x/9a/a4/67/9aa467f9a1eac82276d671289c97962c.jpg');
+    }
+    100% {
+        border-radius: 0;
+        width: 40px;
+        background-image: url('https://pubimg.band.uol.com.br/files/500de32145bd54682270.png');
+    }
+}
+
+.singapura{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    right: 210px;
+    bottom: 0px;
+    background-image: url('https://wallpaperaccess.com/full/1458954.jpg');
+    cursor: pointer;
+    border-radius: 50%;
+    transition: .5s;
+    background-position: left;
+    background-size: cover;
+}
+
+.singapura:hover {
+    z-index: 1;
+    height: 30px;
+    width: 30px;
+    scale: 5.0;
+    border-radius: 20%;
+    animation: changeImage19 3s forwards;
+    animation-timing-function: ease-in;
+}
+
+@keyframes changeImage19 {
+    0%{
+        width: 30px;
+        background-image: url('https://i.pinimg.com/736x/e6/a4/d5/e6a4d5c78485e5f2fde36d1fdde4d83c.jpg');
+    }
+    75% {
+        width: 30px;
+        background-image: url('https://i.pinimg.com/736x/e6/a4/d5/e6a4d5c78485e5f2fde36d1fdde4d83c.jpg');
+    }
+    100% {
+        border-radius: 0;
+        width: 40px;
+        background-image: url('https://cdn-1.motorsport.com/images/amp/0JBLP1B0/s6/charles-leclerc-ferrari-f1-75-.jpg');
+    }
+}
+
+.abu-dhabi{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 80px;
+    top: 45px;
+    background-image: url('https://wallpapercave.com/wp/wp6817736.jpg');
+    cursor: pointer;
+    border-radius: 50%;
+    transition: .5s;
+    background-position: left;
+    background-size: cover;
+}
+
+.abu-dhabi:hover {
+    z-index: 1;
+    height: 30px;
+    width: 30px;
+    scale: 5.0;
+    border-radius: 20%;
+    animation: changeImage20 3s forwards;
+    animation-timing-function: ease-in;
+}
+
+@keyframes changeImage20 {
+    0%{
+        width: 30px;
+        background-image: url('https://i.pinimg.com/736x/0e/fc/e4/0efce48a7cf0ddb15850a450aed565e4.jpg');
+    }
+    75% {
+        width: 30px;
+        background-image: url('https://i.pinimg.com/736x/0e/fc/e4/0efce48a7cf0ddb15850a450aed565e4.jpg');
+    }
+    100% {
+        border-radius: 0;
+        width: 40px;
+        background-image: url('https://raceexperience.nl/wp-content/uploads/2020/09/Abu-Dhabi-4.jpg');
+    }
+}
+
+.japao{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    right: 85px;
+    top: 05px;
+    background-image: url('https://i.pinimg.com/originals/5d/9a/9a/5d9a9ac6f1b4fd29652f2e4992d76ec8.png');
+    cursor: pointer;
+    border-radius: 50%;
+    transition: .5s;
+    background-position: center;
+    background-size: cover;
+}
+
+.japao:hover {
+    z-index: 1;
+    height: 30px;
+    width: 30px;
+    scale: 5.0;
+    border-radius: 20%;
+    animation: changeImage21 3s forwards;
+    animation-timing-function: ease-in;
+}
+
+@keyframes changeImage21 {
+    0%{
+        width: 30px;
+        background-image: url('https://i.pinimg.com/736x/63/45/ef/6345ef8704c72d97b686a208d0280dbb.jpg');
+    }
+    75% {
+        width: 30px;
+        background-image: url('https://i.pinimg.com/736x/63/45/ef/6345ef8704c72d97b686a208d0280dbb.jpg');
+    }
+    100% {
+        border-radius: 0;
+        width: 40px;
+        background-image: url('https://s2-ge.glbimg.com/ghm3PwoAFA3JxiOHu12XYB8juso=/0x0:1024x683/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_bc8228b6673f488aa253bbcb03c80ec5/internal_photos/bs/2024/j/Y/5CFdF3TZABfzwVeDB6ew/gettyimages-1688608990.jpg');
+    }
+}
+
+.china{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    right: 140px;
+    top: 25px;
+    background-image: url('https://th.bing.com/th/id/R.dad464ba33801f7133a0f875a8cbffdf?rik=sasobt17LJKd4w&riu=http%3a%2f%2fgeo5.net%2fimagens%2fBandeira-da-China-grande.png&ehk=ekCqpsrd9n%2bvVtLEcJJyauegvEViMiAfquMhZrax0yw%3d&risl=&pid=ImgRaw&r=0');
+    cursor: pointer;
+    border-radius: 50%;
+    transition: .5s;
+    background-position: left;
+    background-size: cover;
+}
+
+.china:hover {
+    z-index: 1;
+    height: 30px;
+    width: 30px;
+    scale: 5.0;
+    border-radius: 20%;
+    animation: changeImage22 3s forwards;
+    animation-timing-function: ease-in;
+}
+
+@keyframes changeImage22 {
+    0%{
+        width: 30px;
+        background-image: url('https://i.pinimg.com/474x/ab/04/1b/ab041babc7906511ca04dee342497198.jpg');
+    }
+    75% {
+        width: 30px;
+        background-image: url('https://i.pinimg.com/474x/ab/04/1b/ab041babc7906511ca04dee342497198.jpg');
+    }
+    100% {
+        border-radius: 0;
+        width: 40px;
+        background-image: url('https://cdn-3.motorsport.com/images/amp/6O1dyEW2/s1000/george-russell-mercedes-f1-w15.jpg');
+    }
+}
+
+.australiagp{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    right: 25px;
+    bottom: 40px;
+    background-image: url('https://imagepng.org/wp-content/uploads/2017/10/bandeira-australia.png');
+    cursor: pointer;
+    border-radius: 50%;
+    transition: .5s;
+    background-position: left;
+    background-size: cover;
+}
+
+.australiagp:hover {
+    z-index: 1;
+    height: 30px;
+    width: 30px;
+    scale: 5.0;
+    border-radius: 20%;
+    animation: changeImage23 3s forwards;
+    animation-timing-function: ease-in;
+}
+
+@keyframes changeImage23 {
+    0%{
+        width: 30px;
+        background-image: url('https://i.pinimg.com/736x/25/29/ee/2529ee6d1d71f20e47c79e7284417b79.jpg');
+    }
+    75% {
+        width: 30px;
+        background-image: url('https://i.pinimg.com/736x/25/29/ee/2529ee6d1d71f20e47c79e7284417b79.jpg');
+    }
+    100% {
+        right: 35px;
+        border-radius: 0;
+        width: 40px;
+        background-image: url('https://www.f1mania.net/wp-content/uploads/2022/04/0001137655_HiRes_07K4L1D09X6UWX0RZRWJK0KDQI9S.jpg');
+    }
+}
+
+.bahrein{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 60px;
+    top: 37px;
+    background-image: url('https://th.bing.com/th/id/R.381d6c0dba9ab34edb070b699675e801?rik=Wf98KTzTwSjjHA&pid=ImgRaw&r=0');
+    cursor: pointer;
+    border-radius: 50%;
+    transition: .5s;
+    background-position: center;
+    background-size: cover;
+}
+
+.bahrein:hover {
+    z-index: 1;
+    height: 30px;
+    width: 30px;
+    scale: 5.0;
+    border-radius: 20%;
+    animation: changeImage24 3s forwards;
+    animation-timing-function: ease-in;
+}
+
+@keyframes changeImage24 {
+    0%{
+        width: 30px;
+        background-image: url('https://i.pinimg.com/736x/9b/c2/6c/9bc26ca24f95fc04de90cf408d787159.jpg');
+    }
+    75% {
+        width: 30px;
+        background-image: url('https://i.pinimg.com/736x/9b/c2/6c/9bc26ca24f95fc04de90cf408d787159.jpg');
+    }
+    100% {
+        border-radius: 0;
+        width: 40px;
+        background-image: url('https://cdn-3.motorsport.com/images/amp/2GzQmQE0/s1000/charles-leclerc-ferrari-f1-75-.jpg');
+    }
+}
+
+.title-gps{
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+    margin-top: 300px;
+    font-size: 45px;
+}
+
+h1 {
+    order: 0;
+    font-family: "Bebas Neue", sans-serif;
+
+}
+.one {
+    width: 100px;
+    height: 100%;
+    background-image: url('https://static.todamateria.com.br/upload/pl/an/planetaterra-cke.jpg?auto_optimize=low');
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+.container {
+    margin-top: 100px;
+    height: 23000px;
+    width: 100%;
+    display: flex;
+}
+
+.block-grandpa{
+    height: 23000px;
+    width: 100%;
+    border: 2px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 25% 05% 30% 05% 35%;
+}
+
+.par {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+p{
+    width: 100%;
+    height: 200px;
+    font-family: "Oswald", sans-serif;
+    font-size: 17px;
+    transform: 0.5s;
+}
+
+h4 {
+    width: 100%;
+    height: auto;
+    font-size: 40px;
+    font-family: "Bebas Neue", sans-serif;
+}
+
+.img {
+    width: 100%;
+    height: 270px;
+    display: flex;
+    background-size: cover;
+    background-position: bottom;
+}
+
+.continent-container-block {
+    width: 75%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    transition: 0.5s;
+    color: aliceblue;
+    cursor: pointer;
+}
+
+.continent-container-block:hover {
+    scale: 1.05;
+}
+
+
+.impar {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+h6{
+    color: aliceblue;
+    font-size: 65px;
+    font-family: "Bebas Neue", sans-serif;
+}
+
+
+
+.sticky {
+    height: 65px;
+    position: sticky;
+    top: 175px;
+    padding: 100px;
+}
+
+.responsivo {
+    display: none;
+}
+
+/* 
+ESTILIZAÇÃO E CARACTERIZAÇÃO DAS TRACKS (PISTAS)
+    
+    AMÉRICA DO SUL
+*/
+
+.imgtexas {
+    background-image: url('https://retornar.com.br/wp-content/uploads/2022/10/image.png');
+    transition: 0s;
+    cursor: pointer;
+}
+
+.imgtexas:hover {
+    background-image: url('https://s2-ge.glbimg.com/-ngVRQsjcvQGrCcIXt1PwHTy4tw=/0x0:1024x683/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_bc8228b6673f488aa253bbcb03c80ec5/internal_photos/bs/2023/9/G/nl5rJxTfAHrEez95vkNQ/gettyimages-1750755382.jpg');
+}
+
+.imgmiami {
+    background-image: url('https://media.formula1.com/image/upload/f_auto,c_limit,q_auto,w_1320/content/dam/fom-website/2018-redesign-assets/Circuit%20maps%2016x9/Miami_Circuit');
+    transition: 0s;
+    cursor: pointer;
+}
+
+.imgmiami:hover {
+    background-image: url('https://variety.com/wp-content/uploads/2024/04/GettyImages-1488324030.jpg?w=1000&h=667&crop=1');
+}
+
+.imgvegas {
+    background-image: url('https://media.formula1.com/image/upload/f_auto,c_limit,q_auto,w_1320/content/dam/fom-website/2018-redesign-assets/Circuit%20maps%2016x9/Las_Vegas_Circuit');
+    transition: 0s;
+    cursor: pointer;
+}
+
+.imgvegas:hover {
+    background-image: url('https://assets.rebelmouse.io/media-library/formula-1-cars-hit-the-las-vegas-circuit-for-grand-prix-practice-but-the-famous-strip-bites-back.webp?id=50505452&width=1200&height=800&quality=90&coordinates=0%2C0%2C0%2C0');
+}
+
+.imgmexico {
+    background-image: url('https://media.formula1.com/image/upload/f_auto,c_limit,q_auto,w_1320/content/dam/fom-website/2018-redesign-assets/Circuit%20maps%2016x9/Mexico_Circuit');
+    transition: 0s;
+    cursor: pointer;
+}
+
+.imgmexico:hover {
+    background-image: url('https://img.band.uol.com.br/image/2023/10/24/max-verstappen-red-bull-no-gp-do-mexico-2022-12228.webp');
+}
+
+.imgcanada {
+    background-image: url('https://media.formula1.com/image/upload/f_auto,c_limit,q_auto,w_1320/content/dam/fom-website/2018-redesign-assets/Circuit%20maps%2016x9/Canada_Circuit');
+    transition: 0s;
+    cursor: pointer;
+}
+
+.imgcanada:hover {
+    background-image: url('https://ichef.bbci.co.uk/live-experience/cps/1024/cpsprodpb/169EB/production/_130115629_gettyimages-1403872488.jpg');
+}
+
+/*AMÉRICA DO SUL*/
+
+.imgsp {
+    background-image: url('https://media.formula1.com/image/upload/f_auto,c_limit,q_auto,w_1320/content/dam/fom-website/2018-redesign-assets/Circuit%20maps%2016x9/Brazil_Circuit');
+    transition: 0s;
+    cursor: pointer;
+}
+
+.imgsp:hover {
+    background-image: url('https://cdn-7.motorsport.com/images/amp/YEQaglGY/s1000/max-verstappen-red-bull-racing.jpg');
+}
+
+/*ÁSIA*/
+
+.imgazerbaijao {
+    background-image: url('https://media.formula1.com/image/upload/f_auto,c_limit,q_auto,w_1320/content/dam/fom-website/2018-redesign-assets/Circuit%20maps%2016x9/Baku_Circuit');
+    transition: 0s;
+    cursor: pointer;
+}
+
+.imgazerbaijao:hover {
+    background-image: url('https://pubimg.band.uol.com.br/files/500de32145bd54682270.png');
+}
+
+.imgsingapura {
+    background-image: url('https://media.formula1.com/image/upload/f_auto,c_limit,q_auto,w_1320/content/dam/fom-website/2018-redesign-assets/Circuit%20maps%2016x9/Singapore_Circuit');
+    transition: 0s;
+    cursor: pointer;
+}
+
+.imgsingapura:hover {
+    background-image: url('https://cdn-1.motorsport.com/images/amp/0JBLP1B0/s6/charles-leclerc-ferrari-f1-75-.jpg');
+}
+
+.imgabu-dhabi {
+    background-image: url('https://media.formula1.com/image/upload/f_auto,c_limit,q_auto,w_1320/content/dam/fom-website/2018-redesign-assets/Circuit%20maps%2016x9/Abu_Dhabi_Circuit');
+    transition: 0s;
+    cursor: pointer;
+}
+
+.imgabu-dhabi:hover {
+    background-image: url('https://raceexperience.nl/wp-content/uploads/2020/09/Abu-Dhabi-4.jpg');
+}
+
+.imgarabia {
+    background-image: url('https://media.formula1.com/image/upload/f_auto,c_limit,q_auto,w_1320/content/dam/fom-website/2018-redesign-assets/Circuit%20maps%2016x9/Saudi_Arabia_Circuit');
+    transition: 0s;
+    cursor: pointer;
+}
+
+.imgarabia:hover {
+    background-image: url('https://cdn-7.motorsport.com/images/amp/Y99AEPqY/s1000/max-verstappen-red-bull-racing.jpg');
+}
+
+.imgqatar {
+    background-image: url('https://media.formula1.com/image/upload/f_auto,c_limit,q_auto,w_1320/content/dam/fom-website/2018-redesign-assets/Circuit%20maps%2016x9/Qatar_Circuit');
+    transition: 0s;
+    cursor: pointer;
+}
+
+.imgqatar:hover {
+    background-image: url('https://cdn-7.motorsport.com/images/amp/2y3Xyxy6/s1000/oscar-piastri-mclaren-mcl60-ca.jpg');
+}
+
+.imgbahrein {
+    background-image: url('https://media.formula1.com/image/upload/f_auto,c_limit,q_auto,w_1320/content/dam/fom-website/2018-redesign-assets/Circuit%20maps%2016x9/Bahrain_Circuit');
+    transition: 0s;
+    cursor: pointer;
+}
+
+.imgbahrein:hover {
+    background-image: url('https://cdn-3.motorsport.com/images/amp/2GzQmQE0/s1000/charles-leclerc-ferrari-f1-75-.jpg');
+}
+
+.imgchina {
+    background-image: url('https://media.formula1.com/image/upload/f_auto,c_limit,q_auto,w_1320/content/dam/fom-website/2018-redesign-assets/Circuit%20maps%2016x9/China_Circuit');
+    transition: 0s;
+    cursor: pointer;
+}
+
+.imgchina:hover {
+    background-image: url('https://cdn-3.motorsport.com/images/amp/6O1dyEW2/s1000/george-russell-mercedes-f1-w15.jpg');
+}
+
+.imgjapao {
+    background-image: url('https://media.formula1.com/image/upload/f_auto,c_limit,q_auto,w_1320/content/dam/fom-website/2018-redesign-assets/Circuit%20maps%2016x9/Japan_Circuit');
+    transition: 0s;
+    cursor: pointer;
+}
+
+.imgjapao:hover {
+    background-image: url('https://s2-ge.glbimg.com/ghm3PwoAFA3JxiOHu12XYB8juso=/0x0:1024x683/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_bc8228b6673f488aa253bbcb03c80ec5/internal_photos/bs/2024/j/Y/5CFdF3TZABfzwVeDB6ew/gettyimages-1688608990.jpg');
+}
+
+/*AUSTRÁLIA*/
+
+.imgaustralia {
+    background-image: url('https://media.formula1.com/image/upload/f_auto,c_limit,q_auto,w_771/content/dam/fom-website/2018-redesign-assets/Circuit%20maps%2016x9/Australia_Circuit');
+    transition: 0s;
+    cursor: pointer;
+}
+
+.imgaustralia:hover {
+    background-image: url('https://www.f1mania.net/wp-content/uploads/2022/04/0001137655_HiRes_07K4L1D09X6UWX0RZRWJK0KDQI9S.jpg');
+}
+
+/*EUROPA*/
+
+.imgbelgica {
+    background-image: url('https://media.formula1.com/image/upload/f_auto,c_limit,q_auto,w_1320/content/dam/fom-website/2018-redesign-assets/Circuit%20maps%2016x9/Belgium_Circuit');
+    transition: 0s;
+    cursor: pointer;
+}
+
+.imgbelgica:hover {
+    background-image: url('https://media.formula1.com/image/upload/content/dam/fom-website/manual/Teams%20-%20Belgium%20-%20Sunday%20-%202022.jpg');
+}
+
+.imgitalia {
+    background-image: url('https://media.formula1.com/image/upload/f_auto,c_limit,q_auto,w_1320/content/dam/fom-website/2018-redesign-assets/Circuit%20maps%2016x9/Italy_Circuit');
+    transition: 0s;
+    cursor: pointer;
+}
+
+.imgitalia:hover {
+    background-image: url('https://www.insidehook.com/wp-content/uploads/2023/09/f1-monza-italian-grand-prix-2023.jpg?fit=1200%2C800');
+}
+
+.imgemilia {
+    background-image: url('https://media.formula1.com/image/upload/f_auto,c_limit,q_auto,w_1320/content/dam/fom-website/2018-redesign-assets/Circuit%20maps%2016x9/Emilia_Romagna_Circuit');
+    transition: 0s;
+    cursor: pointer;
+}
+
+.imgemilia:hover {
+    background-image: url('https://cdn-1.motorsport.com/images/amp/0JBNbVo0/s6/max-verstappen-red-bull-racing.jpg');
+}
+
+.imgespanha {
+    background-image: url('https://media.formula1.com/image/upload/f_auto,c_limit,q_auto,w_1320/content/dam/fom-website/2018-redesign-assets/Circuit%20maps%2016x9/Spain_Circuit');
+    transition: 0s;
+    cursor: pointer;
+}
+
+.imgespanha:hover {
+    background-image: url('https://cdn-3.motorsport.com/images/amp/2eAB8rm2/s1000/formula-1-spanish-gp-2023-carl-3.jpg');
+}
+
+.imghungria {
+    background-image: url('https://media.formula1.com/image/upload/f_auto,c_limit,q_auto,w_1320/content/dam/fom-website/2018-redesign-assets/Circuit%20maps%2016x9/Hungary_Circuit');
+    transition: 0s;
+    cursor: pointer;
+}
+
+.imghungria:hover {
+    background-image: url('https://d2xpg1khvwxlf1.cloudfront.net/production/images/original/31335-hungarian_grand_prix_gold_4_grandstand-fc99b94523c5c25e0ef92b1694738a21.jpg');
+}
+
+.imginglaterra {
+    background-image: url('https://media.formula1.com/image/upload/f_auto,c_limit,q_auto,w_1320/content/dam/fom-website/2018-redesign-assets/Circuit%20maps%2016x9/Great_Britain_Circuit');
+    transition: 0s;
+    cursor: pointer;
+}
+
+.imginglaterra:hover {
+    background-image: url('https://hips.hearstapps.com/hmg-prod/images/carlos-sainz-of-spain-driving-the-ferrari-f1-75-leads-max-news-photo-1694703716.jpg');
+}
+
+.imgholanda {
+    background-image: url('https://media.formula1.com/image/upload/f_auto,c_limit,q_auto,w_1320/content/dam/fom-website/2018-redesign-assets/Circuit%20maps%2016x9/Netherlands_Circuit');
+    transition: 0s;
+    cursor: pointer;
+}
+
+.imgholanda:hover {
+    background-image: url('https://cdn-4.motorsport.com/images/amp/0mbEw8M2/s1000/sergio-perez-red-bull-racing-r.jpg');
+}
+
+.imgmonaco {
+    background-image: url('https://media.formula1.com/image/upload/f_auto,c_limit,q_auto,w_1320/content/dam/fom-website/2018-redesign-assets/Circuit%20maps%2016x9/Monoco_Circuit');
+    transition: 0s;
+    cursor: pointer;
+}
+
+.imgmonaco:hover {
+    background-image: url('https://cdn-imgix.headout.com/media/images/7d0797d8d3e5a6961697266f94016da9-Monaco%201.jpg');
+}
+
+.imgaustria {
+    background-image: url('https://media.formula1.com/image/upload/f_auto,c_limit,q_auto,w_1320/content/dam/fom-website/2018-redesign-assets/Circuit%20maps%2016x9/Austria_Circuit');
+    transition: 0s;
+    cursor: pointer;
+}
+
+.imgaustria:hover {
+    background-image: url('https://cdn.24.co.za/files/Cms/General/d/3409/eea48ff2b5bf42d394dab18fb4e8c266.jpg');
+}
+
+footer {
+    height: 300px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+span {
+    color: aliceblue;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    transition: 0.8s;
+}
+
+span:hover{
+    color: red;
+}
+
+.footer-navigation {
+    display: none;
+}
+
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+@media(max-width: 768px){
+    .footer-navigation{
+        display: block;
+        
+    }
+
+    .world {
+        display: none;
+    }
+
+    nav{
+        display: none;
+    }
+
+    .title-gps{
+        margin-top: 150px;
+        margin-bottom: 150px;
+        width: 95%;
+        height: 700px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 60px;
+    }
+
+    .one{
+        width: 120px;
+        height: 85px;
+    }
+
+    h6{
+        font-size: 65px;
+        text-align: center;
+    }
+
+    .container {
+        display: none;
+    }
+
+    .responsivo{
+        height: 11900px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .continent-container-block {
+        width: 100%;
+    }
+
+    .img{
+        height: 175px;
+        width: 300px;
+    }
+
+    .sticky {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
